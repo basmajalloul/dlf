@@ -1,17 +1,17 @@
+# Acute Gait Adaptation Index (AGAI)
 
-# Differential Learning Framework
-
-Official implementation of the Differential Learning Index (DLI) framework with full experimental notebooks, processed datasets, and supplementary materials for cognitive and motor learning assessment.
+Official implementation of the AGAI framework for short-term motor adaptation analysis using a hybrid AI pipeline. This repository includes all experimental notebooks, processed results, and supplementary materials from the ICONIP 2025 submission:  
+**"Quantifying Motor Adaptation: A Hybrid AI Approach for Interpreting Short-Term Gait Variability."**
 
 ## 📖 Overview
-- DLI Computation using Autoencoders, Transformers, and DTW.
-- LLM-based interpretability for generating human-readable learning assessments.
-- Ablation studies demonstrating the contribution of DLI to explainability.
+- Composite metric (AGAI) integrating Autoencoder anomaly scores, Transformer forecasting deviations, and DTW-based trajectory drift.
+- LLM-based interpretability layer for generating subject-level motor adaptation summaries.
+- Ablation and comparative studies against classical metrics (e.g., standard deviation, entropy).
 
 ## 📂 Repository Structure
-- `data/`: Processed datasets and result files.
-- `Notebooks/`: Jupyter notebooks for model training, evaluation, and result visualization.
-- `Supplementary/`: Additional materials including mathematical formulations and LLM prompt templates.
+- `data/`: Processed gait feature data and AGAI results.
+- `Notebooks/`: Jupyter notebooks for model training, AGAI computation, clustering, and visualization.
+- `Supplementary/`: Mathematical formulations, LLM prompt templates, and figure exports.
 - `LICENSE`: Licensing information.
 
 ## 🚀 Quick Start
@@ -19,15 +19,10 @@ Official implementation of the Differential Learning Index (DLI) framework with 
 Install dependencies:
 ```bash
 pip install -r requirements.txt
+
 ```
 
 Explore the notebooks in the `Notebooks/` directory for step-by-step experiments.
 
 ## 📄 License
 This project is licensed under the MIT License.
-
----
-
-If you use this framework, please cite our work:
-
-> [Include the BibTeX entry once the paper is accepted.]
